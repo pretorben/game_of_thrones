@@ -1,0 +1,7 @@
+<%= link_to "Main", houses_path %>
+<article>
+  <h2><%= @character.name - @house.title %></h2>
+  <%= image_tag @character.img_url %>
+  <%= link_to "Edit Character", edit_house_character_path(@house, @character) %>
+  <%= link_to "Delete Character", house_path(@house), method: :delete %>
+</article>

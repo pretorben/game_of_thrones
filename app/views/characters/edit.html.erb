@@ -1,0 +1,12 @@
+<%= link_to "Main", houses_path %>
+<h3>Edit Character</h3>
+
+<%= form_for [@house, @character] do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_area :name %>
+  <%= f.label :img_url, "Picture" %>
+  <%= f.text_area :img_url %>
+  <%= f.label :title, "House" %>
+  <%= f.text_area :title %>
+  <%= f.submit %>
+<% end %>

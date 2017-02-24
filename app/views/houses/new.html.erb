@@ -1,0 +1,9 @@
+<h3>New House</h3>
+
+<%= form_for [@house] do |f| %>
+  <%= f.label :title %>
+  <%= f.text_area :title %>
+  <%= f.label :img_url %>
+  <%= f.text_area :img_url %>
+  <%= f.submit %>
+<% end %>
