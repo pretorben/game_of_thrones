@@ -1,10 +1,9 @@
-<%= link_to "Main", houses_path %>
-<%= link_to "Create New House", new_house_path %>
-<div>
+<h3><%= link_to "Create New House", new_house_path %></h3>
+<article>
   <% @houses.each do |house| %>
     <div>
       <h2><%= link_to house.title, house_path(house) %></h2>
       <%= image_tag house.img_url %>
     </div>
   <% end %>
-</div>
+</article>
